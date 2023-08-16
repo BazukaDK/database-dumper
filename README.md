@@ -72,11 +72,11 @@ Select `0` (mysql) and press `enter`
 
 ### Setting up `.env`
 
-To overwrite default name *`backup-{Y-m-d'}.sql`* add the following to your `.env`
+To overwrite default name *`backup-{Y-m-d}.sql`* add the following to your `.env`
 ```
 DB_DUMP_NAME=my-dump
 ```
-*`my-dump-{Y-m-d'}.sql`*
+*`my-dump-{Y-m-d}.sql`*
 
 ### Running the test project
 
