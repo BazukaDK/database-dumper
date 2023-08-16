@@ -24,7 +24,12 @@ Bazuka\DatabaseDumper\Providers\DatabaseDumperProvider::class,
 
 Artisan command `database:dump` is now available.
 
-Running `database:dump` will create a `.sql` backup of the database in `storage/app/backups`
+Running `database:dump` will create a `.sql` backup of the database in `storage/app/backup`
+
+To overwrite the prefix *`backup`*`-{Y-m-d}.sql` add the following to your `.env`
+```
+DB_DUMP_PREFIX=backup
+```
 
 For weekly backups add the following to your schedule in `kernel.php`.
 
@@ -69,14 +74,6 @@ composer require laravel/sail --dev
 php artisan sail:install
 ```
 Select `0` (mysql) and press `enter`
-
-### Setting up `.env`
-
-To overwrite default name *`backup-{Y-m-d}.sql`* add the following to your `.env`
-```
-DB_DUMP_NAME=my-dump
-```
-*`my-dump-{Y-m-d}.sql`*
 
 ### Running the test project
 

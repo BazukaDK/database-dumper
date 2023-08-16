@@ -27,7 +27,7 @@ class DatabaseDump extends Command
      */
     public function handle()
     {
-        $filename = env('DB_DUMP_NAME', 'backup-' . Carbon::now()->format('Y-m-d')) . '.sql';
+        $filename = env('DB_DUMP_PREFIX', 'backup') . '-' . Carbon::now()->format('Y-m-d') . '.sql';
         $storageAt = storage_path() . '/app/backup/';
 
         if (!File::exists($storageAt)) {
