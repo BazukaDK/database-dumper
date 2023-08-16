@@ -1,0 +1,16 @@
+{
+    "name": "bazuka/database-dumper",
+    "description": "Dump database for easier development.",
+    "autoload": {
+        "psr-4": {
+            "Bazuka\\DatabaseDumper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thor Nissen",
+            "email": "thorjnissen@gmail.com"
+        }
+    ],
+    "require": {}
+}
